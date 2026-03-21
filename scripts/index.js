@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded",function(){
         y: 100,
         stagger:{
             each: 0.008,
-            from: "randoms"
+            
         },
         duration: 0.6,
         ease: "power2.out"
@@ -57,6 +57,24 @@ document.addEventListener("DOMContentLoaded",function(){
     },"<")
     .from('.draw-me', { duration: 3, drawSVG: "0%", ease: "power4.out", opacity:0  },"<");
     
+
+    split.chars.forEach(char => {
+    char.addEventListener("mouseenter", () => {
+        gsap.to(char, {
+            color: "#080808",
+            duration: 0.1
+        });
+    });
+
+    char.addEventListener("mouseleave", () => {
+        gsap.to(char, {
+            color: "#F3F3F3",
+            duration: 0.1
+        });
+    });
+});
+
+
 });
 
 
