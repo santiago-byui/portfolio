@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
     const heroText = document.getElementById("hero-text");
 
-    const split = new SplitText(heroText, {type:"chars"});
+    const split = new SplitText(heroText, {type:"chars,words"});
 
     const timeline = gsap.timeline();
 
@@ -58,18 +58,18 @@ document.addEventListener("DOMContentLoaded",function(){
     .from('.draw-me', { duration: 3, drawSVG: "0%", ease: "power4.out", opacity:0  },"<");
     
 
-    split.chars.forEach(char => {
+    split.words.forEach(char => {
     char.addEventListener("mouseenter", () => {
         gsap.to(char, {
-            color: "#080808",
-            duration: 0.1
+            y: "-4px",
+            duration: 0.2
         });
     });
 
     char.addEventListener("mouseleave", () => {
         gsap.to(char, {
-            color: "#F3F3F3",
-            duration: 0.1
+            y: "0px",
+            duration: 0.2
         });
     });
 });
