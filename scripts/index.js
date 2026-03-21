@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded",function(){
 
     Draggable.create(".drag",{
     inertia: true,
-    bounds: "body"
 })
 
 
