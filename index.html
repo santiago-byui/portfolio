@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago Villarroel</title>
     
-
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/DrawSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/Draggable.min.js"></script>
+    <script src=https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/InertiaPlugin.min.js></script>
 
     <link rel="stylesheet" href="styles/index.css">
 </head>
@@ -18,7 +19,7 @@
 <body>
     
     <header>
-        <div id="logo-container">
+        <div id="logo-container" class="drag">
             SANTIAGO VILLARROEL
         </div>
     </header>
@@ -61,7 +62,7 @@
                 Contact Me
             </a>
             <div id="quote-container">
-            <h6>
+            <h6 class="drag">
                 typography shapes how 
                 information is read, understood, and acted upon
             </h6>

@@ -1,5 +1,7 @@
 gsap.registerPlugin(SplitText);
 gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(Draggable) 
+gsap.registerPlugin(InertiaPlugin) 
 
 document.addEventListener("DOMContentLoaded",function(){
 
@@ -14,6 +16,15 @@ document.addEventListener("DOMContentLoaded",function(){
     const logo = document.querySelector("#logo-container");
 
     const footer = document.querySelector("footer");
+
+
+    Draggable.create(".drag",{
+    inertia: true,
+    bounds: "body"
+})
+
+
+
 
     timeline.from(split.chars,{
         opacity:0,
@@ -48,4 +59,5 @@ document.addEventListener("DOMContentLoaded",function(){
     .from('.draw-me', { duration: 3, drawSVG: "0%", ease: "power4.out", opacity:0  },"<");
     
 });
+
 
