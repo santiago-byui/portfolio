@@ -1,0 +1,135 @@
+/* Resetting default browser styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+    font-family: sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, textarea, select {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* */
+
+header {
+    display: flex;
+}
+
+.message-container{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.message-tail{
+    height: 20px;
+    width: 20px;
+    transform: scale(1,1.5);
+    margin-right: -12px;
+}
+.message-bubble{
+    background-color: #4952ed;
+    padding: 15px;
+    padding-right: 17px;
+    padding-left: 17px;
+    border-radius: 9px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #f8f8f8;
+    font-size: 25px;
+}
+.message-status{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #282828;
+
+    margin-left: -85px;
+    margin-bottom: -20px;
+}
+#message-picture {
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+    object-fit: cover;
+}
+
+
+@media (max-width:375px) {
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 10fr 10fr 1fr;
+}
+
+header {
+    grid-column: 2/4;
+    margin-top: 3em;
+}
+
+.message-bubble {
+    font-size: 14px;
+    padding: 12px;
+}
+.message-status {
+    font-size: 10px;
+    margin-left: -58px;
+    margin-bottom: -17px;
+}
+#phone-container {
+    grid-column: 2/4;
+    position: relative;
+    top: 3em;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+#phone-container p {
+    position: absolute;
+    top: 90px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f8f8;
+    line-height: normal;
+}
+#phone-container a {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f8f8;
+    opacity: 0.8;
+
+}
+#phone {
+    position: absolute;
+    z-index: -1;
+}
+main {
+    grid-column: 1/5;
+    margin-top: 25em;
+    background-color: #080808;
+}
+
+}

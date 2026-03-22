@@ -10,14 +10,31 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/DrawSVGPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/Draggable.min.js"></script>
     <script src=https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/InertiaPlugin.min.js></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/MorphSVGPlugin.min.js"></script>
 
     <link rel="stylesheet" href="styles/index.css">
 </head>
 
-<script src="scripts/index.js"></script>
 
 <body>
     
+    <svg id="hero-stroke" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="361.44" height="109.72" viewBox="0 0 361.44 109.72">
+                <defs>
+                    <style>
+                        .b
+                        {
+                        fill: none;
+                        stroke: #f8f8f8;
+                        stroke-miterlimit: 10;
+                        stroke-width: 2px;
+                        }
+        
+                    </style>
+                </defs>
+            <path class="b stroke-a" d="M33.79,54.86s68.83-75.35,144.18,0c75.35,75.35,149.88,0,149.88,0"/>
+            <path class="b stroke-b" d="M5.17,31.27s68.83,75.35,144.18,0c54.61-54.61,149.88,0,149.88,0"/>
+            </svg>
+
     <header>
         <div id="logo-container" class="drag">
             SANTIAGO VILLARROEL
@@ -33,29 +50,13 @@
                 <br>
                 that shape outcomes.
             </h1>
-            
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg id="hero-stroke" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="361.44" height="109.72" viewBox="0 0 361.44 109.72">
-                <defs>
-                    <style>
-                        .b
-                        {
-                        fill: none;
-                        stroke: #4952ed;
-                        stroke-miterlimit: 10;
-                        stroke-width: 14px;
-                        }
-                    </style>
-                </defs>
-            <path class="draw-me b" d="M33.79,54.86s68.83-75.35,144.18,0c75.35,75.35,149.88,0,149.88,0"/>
-            </svg>
 
         </div>
 
     </main>
 
     <footer>
-            <button>
+            <button onclick="window.location.href='showcase.html'" id="link-button">
                 Project Showcase
             </button>
             <a href="index.html">
@@ -68,6 +69,8 @@
             </h6>
             </div>
     </footer>
+    <div id="date">2026</div>
 
+    <script src="scripts/index.js"></script>
 </body>
 </html>

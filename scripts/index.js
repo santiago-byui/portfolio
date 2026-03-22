@@ -1,7 +1,8 @@
 gsap.registerPlugin(SplitText);
 gsap.registerPlugin(DrawSVGPlugin);
-gsap.registerPlugin(Draggable) 
-gsap.registerPlugin(InertiaPlugin) 
+gsap.registerPlugin(Draggable);
+gsap.registerPlugin(InertiaPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
 
 document.addEventListener("DOMContentLoaded",function(){
 
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded",function(){
 })
 
 
+    
 
 
     timeline.from(split.chars,{
@@ -55,24 +57,12 @@ document.addEventListener("DOMContentLoaded",function(){
         duration: 5,
         ease: "power1.out"
     },"<")
-    .from('.draw-me', { duration: 3, drawSVG: "0%", ease: "power4.out", opacity:0  },"<");
+    .from("#date",{
+        opacity: 0,
+        duration: 5,
+        ease: "power1.out"
+    },"<")
     
-
-    split.words.forEach(char => {
-    char.addEventListener("mouseenter", () => {
-        gsap.to(char, {
-            y: "-4px",
-            duration: 0.2
-        });
-    });
-
-    char.addEventListener("mouseleave", () => {
-        gsap.to(char, {
-            y: "0px",
-            duration: 0.2
-        });
-    });
-});
 
 
 });
