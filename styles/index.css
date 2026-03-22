@@ -319,3 +319,38 @@ footer a {
 }
 
 }
+
+@media (max-width:1000px) and (max-height:560px) and (min-width:600px){
+
+#h1-container {
+    margin-top: 5em;
+}
+main h1{
+    font-size: 3em;
+}
+footer {
+    margin-top: 9em;
+}
+#quote-container h6{
+    margin-top: 2em;
+}
+
+}
+
+@media (max-width:1000px) and (max-height:400px) and (min-width:600px){
+
+#h1-container {
+    margin-top: 3em;
+}
+main h1{
+    font-size: 3em;
+}
+footer {
+    margin-top: 9em;
+}
+#quote-container h6{
+    margin-top: 2em;
+}
+
+
+}
