@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded",()=>{
    
     const timeline = gsap.timeline();
 
+
     timeline.from("#message-picture",{
         opacity:0,
         y: "10px",
@@ -25,9 +26,16 @@ document.addEventListener("DOMContentLoaded",()=>{
     },)
     .from("#phone-container",{
         y: "300px",
-        duration: 2,
+        duration: 1.5,
         ease: "power2.out"
 
+    })
+    .from("#phone-p2",{
+        x: "300px",
+        opacity:0,
+        duration: 1.5,
+        ease: "power2.out"
+        
     })
 
 });

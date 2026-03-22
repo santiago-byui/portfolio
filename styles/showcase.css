@@ -76,9 +76,12 @@ header {
     width: 42px;
     object-fit: cover;
 }
+main {
+    height: 40em;
+}
 
 
-@media (max-width:375px) {
+@media (max-width:400px) {
 
 body {
     display: grid;
@@ -115,6 +118,9 @@ header {
     color: #f8f8f8;
     line-height: normal;
 }
+#phone-container #phone-p2{
+    display: none;
+}
 #phone-container a {
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -128,8 +134,198 @@ header {
 }
 main {
     grid-column: 1/5;
-    margin-top: 25em;
+    margin-top: 20em;
     background-color: #080808;
 }
 
+}
+
+
+@media (min-width:401px) and (max-width:550px){
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 6fr 1fr;
+}
+header {
+    grid-column: 2/5;
+    margin-top: 2em;
+}
+#message-picture{
+    height: 50px;
+    width: 50px;
+}
+.message-bubble{
+    padding: 13px;
+    font-size: 17px;
+    line-height: normal;
+}
+.message-status{
+    margin-left: -80px;
+}
+#phone-container{
+    grid-column: 2/5;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    position: relative;
+    z-index: -1;
+}
+#phone {
+    position: absolute;
+    z-index: -1;
+    max-width: 368px;
+}
+#phone-container p {
+    position: absolute;
+    top: 150px;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f8f8;
+    line-height: normal;
+}
+#phone-container #phone-p2{
+    display: none;
+}
+#phone-container a {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f8f8;
+    opacity: 0.8;
+}
+main {
+    grid-column: 1/6;
+    margin-top: 25em;
+    background-color: #080808;
+    
+}
+}
+
+@media (min-width:551px) and (max-width:900px){
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 6fr 3fr 3fr 6fr 1fr;
+}
+header {
+    grid-column: 2/5;
+    margin-top: 4em;
+}
+#message-picture{
+    height: 50px;
+    width: 50px;
+}
+.message-bubble{
+    padding: 13px;
+    font-size: 17px;
+    line-height: normal;
+}
+.message-status{
+    margin-left: -80px;
+}
+#phone-container{
+    grid-column: 4/6;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    position: relative;
+    z-index: -1;
+}
+#phone {
+    position: absolute;
+    z-index: -1;
+    max-width: 300px;
+}
+#phone-container p {
+    position: absolute;
+    top: 120px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f8f8;
+    line-height: normal;
+}
+#phone-container #phone-p2 {
+    position: absolute;
+    left: -19.5em;
+    color: #080808;
+    text-align: right;
+    z-index: -1;
+}
+#phone-container a {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f8f8;
+    opacity: 0.8;
+}
+main {
+    grid-column: 1/7;
+    margin-top: 23em;
+    background-color: #080808;
+    
+}
+}
+
+@media (min-width:901px){
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 3fr 3fr 3fr 1fr;
+}
+header {
+    grid-column: 3/9;
+    margin-top: 6em;
+}
+#message-picture{
+    height: 50px;
+    width: 50px;
+}
+.message-bubble{
+    padding: 13px;
+    font-size: 17px;
+    line-height: normal;
+}
+.message-status{
+    margin-left: -80px;
+}
+#phone-container{
+    grid-column: 5/7;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    position: relative;
+    z-index: -1;
+    max-width: 360px;
+}
+#phone {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+#phone-container p {
+    position: absolute;
+    top: 120px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f8f8;
+    line-height: normal;
+}
+#phone-container #phone-p2 {
+    position: absolute;
+    left: -20em;
+    color: #080808;
+    text-align: right;
+    z-index: -1;
+}
+#phone-container a {
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f8f8;
+    opacity: 0.8;
+}
+main {
+    grid-column: 1/9;
+    margin-top: 23em;
+    background-color: #080808;
+    
+}
 }
