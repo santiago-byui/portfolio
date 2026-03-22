@@ -34,6 +34,11 @@ img {
 
 /* */
 
+::selection {
+    background-color: #000000;
+    color: #e4e4e4;
+}
+
 header {
     display: flex;
 }
@@ -49,6 +54,7 @@ header {
     width: 20px;
     transform: scale(1,1.5);
     margin-right: -12px;
+    z-index: -1;
 }
 .message-bubble{
     background-color: #4952ed;
@@ -61,7 +67,10 @@ header {
     font-weight: normal;
     color: #f8f8f8;
     font-size: 25px;
+    transition: 0.2s;
+    
 }
+
 .message-status{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -76,6 +85,7 @@ header {
     width: 42px;
     object-fit: cover;
 }
+
 main {
     height: 40em;
 }
@@ -295,11 +305,13 @@ header {
     position: relative;
     z-index: -1;
     max-width: 360px;
+    
 }
 #phone {
     position: absolute;
     z-index: -1;
     width: 100%;
+
 }
 #phone-container p {
     position: absolute;
