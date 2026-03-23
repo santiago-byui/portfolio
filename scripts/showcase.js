@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         gsap.to("#message-2 .message-bubble",{
             backgroundColor: "#525bf7",
             duration: 0.1,
-            ease: "power1.out"
+            ease: "power1.in"
 
         })
         gsap.to("#message-2 .message-tail path",{
@@ -127,10 +127,16 @@ document.addEventListener("DOMContentLoaded",()=>{
 
             rotate:"360deg",
             y:"500px",
-            opacity: 0,
             duration: 4,
             ease: "power1.out"
         },"<20%")
+        .to(".message-status",{
+
+            rotate:"360deg",
+            opacity: 0,
+            duration: 2,
+            ease: "power1.out"
+        },"<")
 
         jumpTriggered = true
 
@@ -143,19 +149,19 @@ document.addEventListener("DOMContentLoaded",()=>{
         opacity:0,
         y: "10px",
         duration:0.5,
-        ease: "power2.out"
+        ease: "power1.out"
     })
     .from("#message-1",{
         opacity:0,
         y: "10px",
         duration:0.5,
-        ease: "power2.out"
+        ease: "power1.out"
     },"<")
     .from("#message-2",{
         opacity:0,
         y: "10px",
         duration:0.5,
-        ease: "power2.out"
+        ease: "power1.out"
     },)
     .from("#phone-container",{
         y: "300px",

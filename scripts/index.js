@@ -53,11 +53,6 @@ document.addEventListener("DOMContentLoaded",function(){
         duration: 5,
         ease: "power1.out"
     },"<")
-    .from("#date",{
-        opacity: 0,
-        duration: 5,
-        ease: "power1.out"
-    },"<")
     .from("#shader-div",{
         opacity: 0,
         duration: 5,

@@ -156,28 +156,23 @@ main {
 #showcase-title {
     display: flex;
     align-items: center;
-    justify-content:center;
-    margin-top: 6em;
+    margin-top: 4em;
+    margin-left: 3px;
 }
 main h1{
-    font-size: 20px;
-    font-family: "articulat-cf", sans-serif;
-    font-weight: 100;
+    font-size: 50px;
+    font-family: articulat-heavy-cf, sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-style: normal;
     color: #f8f8f8;
     white-space: nowrap;
-    margin-left: 12px;
-    margin-right: 12px;
-}
-.showcase-title-line {
-    border-bottom: 1.5px solid #f8f8f8;
-    width: 20px;
-    margin-top: 2px;
+    line-height: 41px;
 }
 #carousel {
     display: flex;
     justify-content: center;
-    margin-top: 2.5em;
+    margin-top: 3px;
 }
 .card {
     width: 100%;
@@ -189,9 +184,10 @@ main h1{
 }
 #thumbnail-container {
     display: flex;
-    margin-top: 14px;
-    gap: 14px;
-    justify-content: center;
+    margin-top: 5px;
+    gap: 5px;
+    margin-right: 5px;
+    justify-content: flex-end;
 }
 .carousel-thumbnail {
     width: 80px;
