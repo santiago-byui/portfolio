@@ -194,6 +194,12 @@ main h1{
     border-radius: 1px;
 }
 
+#vinyl-thumbnail,
+#home-thumbnail,
+#book-thumbnail {
+  touch-action: manipulation;
+  z-index: 1000px;
+}
 
 
 @media (min-width:401px) and (max-width:550px){
