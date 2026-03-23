@@ -154,9 +154,7 @@ main {
 /*showcase*//*showcase*/
 
 #showcase-title {
-    display: flex;
-    align-items: center;
-    margin-top: 4em;
+    margin-top: 1em;
     margin-left: 3px;
 }
 main h1{

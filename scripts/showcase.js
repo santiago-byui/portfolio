@@ -1,4 +1,4 @@
-gsap.registerPlugin(SplitText,DrawSVGPlugin,Draggable,InertiaPlugin,MorphSVGPlugin);
+gsap.registerPlugin(SplitText,DrawSVGPlugin,Draggable,InertiaPlugin,MorphSVGPlugin,ScrambleTextPlugin);
 
 
 document.addEventListener("DOMContentLoaded",()=>{
@@ -176,5 +176,36 @@ document.addEventListener("DOMContentLoaded",()=>{
         ease: "power2.out"
         
     })
+
+
+
+
+
+    /* CAROUSEL ANIMATION */ /* CAROUSEL ANIMATION */ /* CAROUSEL ANIMATION */ /* CAROUSEL ANIMATION */
+    /* CAROUSEL ANIMATION */ /* CAROUSEL ANIMATION */ /* CAROUSEL ANIMATION */ /* CAROUSEL ANIMATION */
+
+
+    const showcaseTitle = document.querySelector("#showcase-title");
+
+    gsap.from(showcaseTitle,{
+        duration: 1.5,
+        scrambleText: {
+        text: "PROJECT",
+        chars: "upperCase",
+    }
+    });
+
+    const showcaseTitleTwo = document.querySelector("#showcase-title-two");
+
+    gsap.from(showcaseTitleTwo,{
+        duration: 1.5,
+        scrambleText: {
+        text: "SHOWCASE",
+        chars: "upperCase"
+    }
+    });
+
+
+
 
 });
