@@ -356,15 +356,15 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
     
-    vinylThumbnail.addEventListener("click",()=>{
+    vinylThumbnail.addEventListener("pointerup",()=>{
         changeImage("vinyl");
     })
 
-    homeThumbnail.addEventListener("click",()=>{
+    homeThumbnail.addEventListener("pointerup",()=>{
         changeImage("home");
     })
 
-    bookThumbnail.addEventListener("click",()=>{
+    bookThumbnail.addEventListener("pointerup",()=>{
         changeImage("book");
     })
 
