@@ -143,6 +143,15 @@ footer h6:hover {
     font-size: 15px;
     text-align: right;
 }
+#shader-div {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
 
 
 
@@ -308,6 +317,9 @@ footer a {
     grid-column: 5/6;
     align-items: flex-end;
 }
+#shader-div{
+    display: none;
+}
 
 }
 
@@ -351,6 +363,5 @@ footer a {
     padding-right: 40px;
     font-size: 12px;
 }
-
 
 }

@@ -6,12 +6,16 @@
     <title>Showcase</title>
     <link rel="stylesheet" href="styles/showcase.css">
 
+    <link rel="stylesheet" href="https://use.typekit.net/zou2wlt.css">
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/DrawSVGPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/Draggable.min.js"></script>
     <script src=https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/InertiaPlugin.min.js></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/MorphSVGPlugin.min.js"></script>
+    
+
 
 </head>
 <body>
@@ -92,9 +96,25 @@
     </div>
     
     <main>
-        helloo
-    </main>
+        <div id="showcase-title">
+            <div class="showcase-title-line"></div>
+            <h1>Project Showcase</h1>
+            <div class="showcase-title-line"></div>
+        </div>
+        <div id="carousel">
+            <section class="card">
+                
+                <img src="images/georgia-lowres.jpg" alt="georgia-lowres" class="carousel-image">
 
+                <div id="thumbnail-container">
+                <img src="images/georgia-lowres.jpg" alt="georgia-lowres" class="carousel-thumbnail">
+                <img src="images/georgia-lowres.jpg" alt="georgia-lowres" class="carousel-thumbnail">
+                <img src="images/georgia-lowres.jpg" alt="georgia-lowres" class="carousel-thumbnail">
+                </div>
+
+            </section>
+        </div>
+    </main>
     
     <script src="scripts/showcase.js"></script>
 </body>

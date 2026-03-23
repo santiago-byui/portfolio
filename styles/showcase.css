@@ -146,9 +146,60 @@ main {
     grid-column: 1/5;
     margin-top: 20em;
     background-color: #080808;
+    overflow: hidden;
 }
 
 }
+
+/*showcase*//*showcase*/
+
+#showcase-title {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 6em;
+}
+main h1{
+    font-size: 20px;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #f8f8f8;
+    white-space: nowrap;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.showcase-title-line {
+    border-bottom: 1.5px solid #f8f8f8;
+    width: 20px;
+    margin-top: 2px;
+}
+#carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5em;
+}
+.card {
+    width: 100%;
+}
+.carousel-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#thumbnail-container {
+    display: flex;
+    margin-top: 14px;
+    gap: 14px;
+    justify-content: center;
+}
+.carousel-thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 1px;
+}
+
 
 
 @media (min-width:401px) and (max-width:550px){

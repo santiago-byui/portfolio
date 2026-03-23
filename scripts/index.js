@@ -1,14 +1,10 @@
-gsap.registerPlugin(SplitText);
-gsap.registerPlugin(DrawSVGPlugin);
-gsap.registerPlugin(Draggable);
-gsap.registerPlugin(InertiaPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(SplitText, Draggable, InertiaPlugin);
 
 document.addEventListener("DOMContentLoaded",function(){
 
     const heroText = document.getElementById("hero-text");
 
-    const split = new SplitText(heroText, {type:"chars,words"});
+    const split = new SplitText(heroText, {type:"chars"});
 
     const timeline = gsap.timeline();
 
@@ -58,6 +54,11 @@ document.addEventListener("DOMContentLoaded",function(){
         ease: "power1.out"
     },"<")
     .from("#date",{
+        opacity: 0,
+        duration: 5,
+        ease: "power1.out"
+    },"<")
+    .from("#shader-div",{
         opacity: 0,
         duration: 5,
         ease: "power1.out"
