@@ -206,6 +206,167 @@ document.addEventListener("DOMContentLoaded",()=>{
     });
 
 
+    const carouselImage = document.querySelector("#carousel-image")
+    const vinylThumbnail = document.querySelector("#vinyl-thumbnail")
+    const homeThumbnail = document.querySelector("#home-thumbnail")
+    const bookThumbnail = document.querySelector("#book-thumbnail")
+
+
+
+    function changeImage(img) {
+        
+       if (img === "vinyl") {
+        
+        gsap.to(carouselImage,{
+
+            opacity:0,
+            duration:0.5,
+            y: "-20px",
+            scale: 0.3,
+            ease: "power1.out",
+            onComplete: ()=>{
+                carouselImage.src = "images/vinyl.png";
+
+                gsap.to(carouselImage,{
+                    opacity:1,
+                    duration:0.5,
+                    y: "0px",
+                    scale: 1,
+            ease: "power1.out"
+                });
+
+
+                gsap.to(showcaseTitle,{
+                duration: 1.5,
+                scrambleText: {
+                text: "VINYL",
+                chars: "upperCase",
+                }
+                });
+
+                gsap.to(showcaseTitleTwo,{
+                duration: 1.5,
+                scrambleText: {
+                text: "DESIGN",
+                chars: "upperCase"
+                }
+                });
+
+
+            }
+
+        });
+       };
+
+
+       if (img === "home") {
+        
+        gsap.to(carouselImage,{
+
+            opacity:0,
+            duration:0.5,
+            y: "-20px",
+            scale: 0.3,
+            ease: "power1.out",
+            onComplete: ()=>{
+                carouselImage.src = "images/home.png";
+
+                gsap.to(carouselImage,{
+                    opacity:1,
+                    duration:0.5,
+                    y: "0px",
+                    scale: 1,
+            ease: "power1.out"
+                });
+
+
+                gsap.to(showcaseTitle,{
+                duration: 1.5,
+                scrambleText: {
+                text: "HOME",
+                chars: "upperCase",
+                }
+                });
+
+                gsap.to(showcaseTitleTwo,{
+                duration: 1.5,
+                scrambleText: {
+                text: "LAYOUT",
+                chars: "upperCase"
+                }
+                });
+
+
+            }
+
+        });
+       };
+
+
+       if (img === "book") {
+        
+        gsap.to(carouselImage,{
+
+            opacity:0,
+            duration:0.5,
+            y: "-20px",
+            scale: 0.3,
+            ease: "power1.out",
+            onComplete: ()=>{
+                carouselImage.src = "images/book.png";
+
+                gsap.to(carouselImage,{
+                    opacity:1,
+                    duration:0.5,
+                    y: "0px",
+                    scale: 1,
+            ease: "power1.out"
+                });
+
+
+                gsap.to(showcaseTitle,{
+                duration: 1.5,
+                scrambleText: {
+                text: "BOOK",
+                chars: "upperCase",
+                }
+                });
+
+                gsap.to(showcaseTitleTwo,{
+                duration: 1.5,
+                scrambleText: {
+                text: "COVER",
+                chars: "upperCase"
+                }
+                });
+
+
+            }
+
+        });
+       };
+
+
+
+    };
+
+
+    
+
+
+
+    
+    vinylThumbnail.addEventListener("click",()=>{
+        changeImage("vinyl");
+    })
+
+    homeThumbnail.addEventListener("click",()=>{
+        changeImage("home");
+    })
+
+    bookThumbnail.addEventListener("click",()=>{
+        changeImage("book");
+    })
 
 
 });
