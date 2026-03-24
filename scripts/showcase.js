@@ -214,9 +214,13 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
     function changeImage(img) {
+
+        if(carouselCooldown === true){return};
         
+        carouselCooldown = true;
+
        if (img === "vinyl") {
-        
+
         gsap.to(carouselImage,{
 
             opacity:0,
@@ -226,6 +230,8 @@ document.addEventListener("DOMContentLoaded",()=>{
             ease: "power1.out",
             onComplete: ()=>{
                 carouselImage.src = "images/vinyl.png";
+
+                carouselCooldown = false;
 
                 gsap.to(carouselImage,{
                     opacity:1,
@@ -260,6 +266,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
        if (img === "home") {
+
         
         gsap.to(carouselImage,{
 
@@ -270,6 +277,8 @@ document.addEventListener("DOMContentLoaded",()=>{
             ease: "power1.out",
             onComplete: ()=>{
                 carouselImage.src = "images/home.png";
+
+                carouselCooldown = false;
 
                 gsap.to(carouselImage,{
                     opacity:1,
@@ -304,6 +313,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
        if (img === "book") {
+
         
         gsap.to(carouselImage,{
 
@@ -314,6 +324,8 @@ document.addEventListener("DOMContentLoaded",()=>{
             ease: "power1.out",
             onComplete: ()=>{
                 carouselImage.src = "images/book.png";
+
+                carouselCooldown = false;
 
                 gsap.to(carouselImage,{
                     opacity:1,
@@ -353,7 +365,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     
 
-
+    let carouselCooldown = false
 
     
     vinylThumbnail.addEventListener("pointerup",()=>{
