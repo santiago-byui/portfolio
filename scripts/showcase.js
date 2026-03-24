@@ -186,25 +186,44 @@ document.addEventListener("DOMContentLoaded",()=>{
     /* CAROUSEL ANIMATION */ /* CAROUSEL ANIMATION */ /* CAROUSEL ANIMATION */ /* CAROUSEL ANIMATION */
 
 
+    
     const showcaseTitle = document.querySelector("#showcase-title");
-
-    gsap.from(showcaseTitle,{
-        duration: 1.5,
-        scrambleText: {
-        text: "PROJECT",
-        chars: "upperCase",
-    }
-    });
-
     const showcaseTitleTwo = document.querySelector("#showcase-title-two");
+    
 
-    gsap.from(showcaseTitleTwo,{
-        duration: 1.5,
-        scrambleText: {
-        text: "SHOWCASE",
-        chars: "upperCase"
-    }
+    const showcaseObserver = new IntersectionObserver((entries,observer)=>{
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting){
+
+                gsap.to(showcaseTitle,{
+                duration: 1.5,
+                scrambleText: {
+                text: "TYPE",
+                chars: "upperCase",
+                }
     });
+
+                 gsap.to(showcaseTitleTwo,{
+                duration: 1.5,
+                scrambleText: {
+                text: "POSTER",
+                chars: "upperCase"
+            }
+            });
+
+                
+
+    observer.unobserve(entry.target)
+
+            }
+
+        })
+
+    },{threshold:0.5});
+
+    
 
 
     const carouselImage = document.querySelector("#carousel-image")
@@ -212,6 +231,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const thumbnailTwo = document.querySelector("#thumbnail-2")
     const thumbnailThree = document.querySelector("#thumbnail-3")
 
+    showcaseObserver.observe(carouselImage)
 
     function changeImage(thumbnail) {
 
