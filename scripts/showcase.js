@@ -383,28 +383,4 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
 
-
-
-    const imageSources = [
-    "images/vinyl.png",
-    "images/home.png",
-    "images/book.png"
-    ];
-
-    let loadedImages = 0;
-
-    imageSources.forEach(src => {
-    const img = new Image();
-    img.src = src;
-
-    img.onload = () => {
-        loadedImages++;
-
-        if (loadedImages === imageSources.length) {
-        console.log("All images loaded");
-        }
-    };
-    });
-
-
 });
