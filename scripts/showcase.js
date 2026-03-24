@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         })
 
-    },{threshold:2});
+    },{threshold:1});
 
     
 
