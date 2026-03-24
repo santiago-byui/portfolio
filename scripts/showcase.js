@@ -1,25 +1,6 @@
 gsap.registerPlugin(SplitText,DrawSVGPlugin,Draggable,InertiaPlugin,MorphSVGPlugin,ScrambleTextPlugin);
 
-const imageSources = [
-  "images/vinyl.png",
-  "images/home.png",
-  "images/book.png"
-];
 
-let loadedImages = 0;
-
-imageSources.forEach(src => {
-  const img = new Image();
-  img.src = src;
-
-  img.onload = () => {
-    loadedImages++;
-
-    if (loadedImages === imageSources.length) {
-      console.log("All images loaded");
-    }
-  };
-});
 
 document.addEventListener("DOMContentLoaded",()=>{
    
@@ -249,7 +230,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             scale: 0.3,
             ease: "power1.out",
             onComplete: ()=>{
-                carouselImage.src = "images/vinyl.png";
+                carouselImage.src = "images/vinyl-lowres.jpg";
 
                 carouselCooldown = false;
 
@@ -296,7 +277,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             scale: 0.3,
             ease: "power1.out",
             onComplete: ()=>{
-                carouselImage.src = "images/home.png";
+                carouselImage.src = "images/home-lowres.jpg";
 
                 carouselCooldown = false;
 
@@ -343,7 +324,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             scale: 0.3,
             ease: "power1.out",
             onComplete: ()=>{
-                carouselImage.src = "images/book.png";
+                carouselImage.src = "images/book-lowres.jpg";
 
                 carouselCooldown = false;
 
@@ -399,6 +380,31 @@ document.addEventListener("DOMContentLoaded",()=>{
     bookThumbnail.addEventListener("pointerup",()=>{
         changeImage("book");
     })
+
+
+
+
+
+    const imageSources = [
+    "images/vinyl.png",
+    "images/home.png",
+    "images/book.png"
+    ];
+
+    let loadedImages = 0;
+
+    imageSources.forEach(src => {
+    const img = new Image();
+    img.src = src;
+
+    img.onload = () => {
+        loadedImages++;
+
+        if (loadedImages === imageSources.length) {
+        console.log("All images loaded");
+        }
+    };
+    });
 
 
 });
