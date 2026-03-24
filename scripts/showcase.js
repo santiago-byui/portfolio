@@ -222,6 +222,17 @@ document.addEventListener("DOMContentLoaded",()=>{
         const lastImage = carouselImage.src
         const newImage = thumbnail.src
         
+        const imageList = [
+
+            {src: "images/georgia-lowres.jpg",lineOne: "TYPE",lineTwo: "POSTER"},
+            {src: "images/book-lowres.jpg",lineOne: "BOOK",lineTwo: "COVER"},
+            {src: "images/home-lowres.jpg",lineOne: "HOME",lineTwo: "LAYOUT"},
+            {src: "images/vinyl-lowres.jpg",lineOne: "VINYL",lineTwo: "COVER"}
+
+        ]
+
+        const imageInfo = imageList.find(img => newImage.endsWith(img.src))
+        
 
         gsap.to(carouselImage,{
             opacity:0,
@@ -266,6 +277,21 @@ document.addEventListener("DOMContentLoaded",()=>{
         })
 
 
+    gsap.to(showcaseTitle,{
+        duration: 1.5,
+        scrambleText: {
+        text: imageInfo.lineOne,
+        chars: "upperCase",
+    }
+    });
+
+    gsap.to(showcaseTitleTwo,{
+        duration: 1.5,
+        scrambleText: {
+        text: imageInfo.lineTwo,
+        chars: "upperCase"
+    }
+    });
 
         
     };
