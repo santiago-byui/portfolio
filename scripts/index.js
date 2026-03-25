@@ -2,6 +2,12 @@ gsap.registerPlugin(SplitText, Draggable, InertiaPlugin);
 
 document.addEventListener("DOMContentLoaded",function(){
 
+
+    if (window.location.pathname.endsWith("/index.html")) {
+    history.replaceState({}, "", "/");
+    }
+
+
     const heroText = document.getElementById("hero-text");
 
     const split = new SplitText(heroText, {type:"chars"});
