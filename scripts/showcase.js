@@ -4,11 +4,6 @@ gsap.registerPlugin(SplitText,DrawSVGPlugin,Draggable,InertiaPlugin,MorphSVGPlug
 
 document.addEventListener("DOMContentLoaded",()=>{
    
-    if (window.location.pathname.endsWith("/showcase.html")) {
-    history.replaceState({}, "", "/showcase");
-    }
-
-
 
     const timeline = gsap.timeline();
 
