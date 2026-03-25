@@ -185,7 +185,6 @@ main h1{
 }
 .card {
     width: 100%;
-    margin-bottom: 3em;
 }
 .carousel-image {
     width: 100%;
@@ -217,14 +216,12 @@ main h1{
 /* footer footer footer */ /* footer footer footer */ 
 footer {
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 #footer-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 #footer-title-container h1 {
     color: #e8e8e8;
@@ -255,8 +252,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-self: center;
 
-    margin-top: 40px;
+    margin-top: 30px;
 }
 #footer-gmail {
     color: #e8e8e8;
@@ -264,8 +262,13 @@ footer {
     font-family: articulat-cf,sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    margin-right: 5px;
+
+    display: flex;
+    justify-self: end;
+
 }
 
 
