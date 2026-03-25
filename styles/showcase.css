@@ -550,7 +550,7 @@ main {
     display: flex;
     align-self: flex-end;
     -webkit-text-stroke: 1px #F3F3F3;
-    color: transparent
+    color: transparent;
 }
 main h1{
     font-size: 50px;
@@ -583,6 +583,19 @@ main h1{
     line-height: normal;
 
 }
+#carousel-description-container-2 {
+    display: flex;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+#carousel-description-container-2 h2{
+    color: #7a7a7a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: normal;
+
+}
 .carousel-image {
     width: 90%;
     object-fit: cover;
@@ -596,6 +609,7 @@ main h1{
     gap: 5px;
     justify-content: flex-end;
     grid-column: 2/3;
+    grid-row: 2/3;
 }
 .carousel-thumbnail {
     width: 80px;

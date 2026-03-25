@@ -189,7 +189,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     
     const showcaseTitle = document.querySelector("#showcase-title");
     const showcaseTitleTwo = document.querySelector("#showcase-title-two");
-    
+    const descriptionTitleTwo = document.querySelector("#description-title-two")
+    const carousel = document.querySelector("#carousel")
 
     const showcaseObserver = new IntersectionObserver((entries,observer)=>{
 
@@ -212,6 +213,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                 chars: "upperCase"
             }
             });
+
 
                 
 
@@ -244,10 +246,10 @@ document.addEventListener("DOMContentLoaded",()=>{
         
         const imageList = [
 
-            {src: "images/georgia-lowres.jpg",lineOne: "TYPE",lineTwo: "POSTER"},
-            {src: "images/book-lowres.jpg",lineOne: "BOOK",lineTwo: "COVER"},
-            {src: "images/home-lowres.jpg",lineOne: "HOME",lineTwo: "LAYOUT"},
-            {src: "images/vinyl-lowres.jpg",lineOne: "VINYL",lineTwo: "COVER"}
+            {src: "images/georgia-lowres.jpg",lineOne: "TYPE",lineTwo: "POSTER",text:" PLACEHOLDER Type influences usability more than we think. This Georgia poster was a quick study in legibility, hierarchy, and personality. Three elements at the core of meaningful UI."},
+            {src: "images/book-lowres.jpg",lineOne: "BOOK",lineTwo: "COVER",text:" PLACEHOLDER This Divine Comedy cover plays with scale, layering, and restraint—where quiet space meets bold interruption to establish hierarchy and rhythm. Three forces at the core of intentional design."},
+            {src: "images/home-lowres.jpg",lineOne: "HOME",lineTwo: "LAYOUT",text:" PLACEHOLDER This “HOME” composition explores contrast, disruption, and balance—where a dominant serif anchors the layout while fractured forms challenge readability. Three tensions at the core of expressive design."},
+            {src: "images/vinyl-lowres.jpg",lineOne: "VINYL",lineTwo: "COVER",text:" PLACEHOLDER This Body and Soul sleeve explores geometry, alignment, and negative space—where angled planes and restrained type create rhythm through precision. Three structures at the core of composed design."}
 
         ]
 
