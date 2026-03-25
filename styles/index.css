@@ -192,6 +192,9 @@ footer a {
     margin-top: 20%;
     width: 90%;
 }
+#shader-div{
+    display: none;
+}
 
 }
 
@@ -243,6 +246,9 @@ footer a {
 }
 #quote-container h6 {
     text-align: left;
+}
+#shader-div{
+    display: none;
 }
 
 }
