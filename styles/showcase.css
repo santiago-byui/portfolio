@@ -255,6 +255,12 @@ footer {
     justify-self: center;
 
     margin-top: 50px;
+
+    transition: 0.2s;
+}
+#footer-button:active {
+    background-color: #f8f8f8;
+    color: #080808;
 }
 #footer-gmail {
     color: #e8e8e8;
@@ -359,7 +365,6 @@ main h1{
 }
 .card {
     width: 100%;
-    margin-bottom: 3em;
 }
 .carousel-image {
     width: 100%;
@@ -395,6 +400,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 300px;
 }
 #footer-title-container h1 {
     color: #e8e8e8;
@@ -407,6 +413,47 @@ footer {
     width: 20px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+#footer-button {
+    border: 0.5px solid #f8f8f8;
+
+    color: #e8e8e8;
+    font-size: 13px;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+
+    margin-top: 50px;
+
+    transition: 0.2s;
+}
+#footer-button:active {
+    background-color: #f8f8f8;
+    color: #080808;
+}
+#footer-gmail {
+    color: #e8e8e8;
+    font-size: 12px;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 200px;
+    margin-bottom: 120px;
+    margin-right: 5px;
+
+    display: flex;
+    justify-self: center;
+
 }
 
 }
@@ -500,7 +547,6 @@ main h1{
 }
 .card {
     width: 100%;
-    margin-bottom: 5em;
 }
 .carousel-image {
     width: 100%;
@@ -535,6 +581,7 @@ footer {
     grid-template-columns: 20px 2fr 315px 1fr 20px;
     grid-template-rows: 1fr;
     height: auto;
+    padding-top: 15em;
 }
 #footer-title-container {
     display: flex;
@@ -566,6 +613,53 @@ footer {
     display: flex;
     align-self: center;
     grid-column: 4/5;
+}
+#footer-button {
+    border: 0.5px solid #f8f8f8;
+
+    color: #e8e8e8;
+    font-size: 13px;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+
+    margin-top: 50px;
+
+    transition: 0.2s;
+
+    grid-column: 3/4;
+    grid-row: 2/3;
+    
+}
+#footer-button:active {
+    background-color: #f8f8f8;
+    color: #080808;
+}
+#footer-gmail {
+    color: #e8e8e8;
+    font-size: 12px;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 200px;
+    margin-bottom: 120px;
+    margin-right: 5px;
+
+    display: flex;
+    justify-self: end;
+
+    grid-column: 3/5;
+    grid-row: 3/4;
+
 }
 
 
@@ -677,7 +771,13 @@ main {
     align-self: flex-end;
     -webkit-text-stroke: 1px #F3F3F3;
     color: transparent;
+    transition: 0.2s;
 }
+
+#description-title-two:hover{
+    -webkit-text-stroke: 1px white;
+}
+
 main h1{
     font-size: 50px;
     font-family: articulat-heavy-cf, sans-serif;
@@ -694,7 +794,6 @@ main h1{
 .card {
     display: grid;
     grid-template-columns: 0.07fr 1fr 0.07fr 0.9fr 0.1fr 0.07fr;
-    margin-bottom: 10em;
 }
 #carousel-description-container {
     display: flex;
@@ -759,9 +858,8 @@ main h1{
 footer {
     overflow: hidden;
     display: grid;
-    grid-template-columns:20px 4fr 360px 3fr 20px;
-    grid-template-rows: 1fr;
-    height: auto;
+    grid-template-columns:20px 3.5fr 360px 3fr 20px;
+    padding-top: 15em;
 }
 #footer-title-container {
     display: flex;
@@ -795,6 +893,60 @@ footer {
     display: flex;
     align-self: center;
     grid-column: 4/5;
+
+}
+
+#footer-button {
+    border: 0.5px solid #f8f8f8;
+
+    color: #e8e8e8;
+    font-size: 13px;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+
+    margin-top: 50px;
+
+    transition: 0.2s;
+
+    grid-column: 3/4;
+    grid-row: 2/3;
+    
+}
+
+#footer-button:hover {
+    background-color: #f8f8f8;
+    color: #080808;
+}
+
+#footer-button:active {
+    background-color: #f8f8f8;
+    color: #080808;
+}
+#footer-gmail {
+    color: #e8e8e8;
+    font-size: 12px;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 200px;
+    margin-bottom: 120px;
+    margin-right: 5px;
+
+    display: flex;
+    justify-self: end;
+
+    grid-column: 3/5;
+    grid-row: 3/4;
 
 }
 
