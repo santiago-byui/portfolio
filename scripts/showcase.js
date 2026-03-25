@@ -232,6 +232,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const thumbnailOne = document.querySelector("#thumbnail-1")
     const thumbnailTwo = document.querySelector("#thumbnail-2")
     const thumbnailThree = document.querySelector("#thumbnail-3")
+    const carouselH2 = document.querySelector("#carousel-h2")
 
     showcaseObserver.observe(carouselImage)
 
@@ -246,10 +247,10 @@ document.addEventListener("DOMContentLoaded",()=>{
         
         const imageList = [
 
-            {src: "images/georgia-lowres.jpg",lineOne: "TYPE",lineTwo: "POSTER",text:" PLACEHOLDER Type influences usability more than we think. This Georgia poster was a quick study in legibility, hierarchy, and personality. Three elements at the core of meaningful UI."},
-            {src: "images/book-lowres.jpg",lineOne: "BOOK",lineTwo: "COVER",text:" PLACEHOLDER This Divine Comedy cover plays with scale, layering, and restraint—where quiet space meets bold interruption to establish hierarchy and rhythm. Three forces at the core of intentional design."},
-            {src: "images/home-lowres.jpg",lineOne: "HOME",lineTwo: "LAYOUT",text:" PLACEHOLDER This “HOME” composition explores contrast, disruption, and balance—where a dominant serif anchors the layout while fractured forms challenge readability. Three tensions at the core of expressive design."},
-            {src: "images/vinyl-lowres.jpg",lineOne: "VINYL",lineTwo: "COVER",text:" PLACEHOLDER This Body and Soul sleeve explores geometry, alignment, and negative space—where angled planes and restrained type create rhythm through precision. Three structures at the core of composed design."}
+            {src: "images/georgia-lowres.jpg",lineOne: "TYPE",lineTwo: "POSTER",text:"This is a type poster I made for the popular typeface Georgia! I tried to highlight its elegance and playfulness by employing a dynamic but heavily aligned composition. "},
+            {src: "images/book-lowres.jpg",lineOne: "BOOK",lineTwo: "COVER",text:"A book cover design for Dante's Divine Comedy. I chose to draw attention to the INFERNO subtitle because of its popularity as well as it's boldness."},
+            {src: "images/home-lowres.jpg",lineOne: "HOME",lineTwo: "LAYOUT",text:"One of my favorite works on display. The goal of this exploration was to form the word HOME through framented type and negative space. Juggling readability and incresingly elaborate compositions was hard but incredibly fun."},
+            {src: "images/vinyl-lowres.jpg",lineOne: "VINYL",lineTwo: "COVER",text:"Cover design for the Body and Soul album by Coleman Hawkins. The composition is purely geometrical, and it relies solely on design principles like alignment and negative space to create visual interest. Limitations demand creative solutions."}
 
         ]
 
@@ -277,8 +278,29 @@ document.addEventListener("DOMContentLoaded",()=>{
                         carouselCooldown = false;
                     }
                 })
+
+                carouselH2.textContent = imageInfo.text;
+                
+
+                gsap.to(carouselH2,{
+                    opacity:1,
+                    duration:0.5,
+                    ease: "power1.out",
+                    onComplete: ()=>{
+                    }
+                })
+
+
             }
         })
+
+
+        gsap.to(carouselH2,{
+            opacity:0,
+            duration:0.5,
+            ease: "power1.out"
+        })
+
 
         gsap.to(thumbnail,{
             opacity:0,
@@ -334,6 +356,20 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     thumbnailThree.addEventListener("pointerup",()=>{
         changeImage(thumbnailThree);
+    })
+
+
+
+
+    const star = document.querySelector("#footer-star")
+
+    gsap.to(star,{
+
+        rotation: 360,
+        duration: 3,
+        repeat: -1,
+        ease: "linear"
+
     })
 
 

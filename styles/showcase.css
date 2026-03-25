@@ -34,6 +34,7 @@ img {
 
 /* */
 
+
 ::selection {
     background-color: #000000;
     color: #e4e4e4;
@@ -96,6 +97,11 @@ main {
 }
 #description-title-two {
     display: none;
+}
+footer {
+    height: auto;
+    background-color: #080808;
+    grid-column: 1/9;
 }
 
 
@@ -179,7 +185,7 @@ main h1{
 }
 .card {
     width: 100%;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
 }
 .carousel-image {
     width: 100%;
@@ -207,6 +213,60 @@ main h1{
   z-index: 1000px;
 }
 
+
+/* footer footer footer */ /* footer footer footer */ 
+footer {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer-title-container h1 {
+    color: #e8e8e8;
+    font-size: 12px;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#footer-star{
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#footer-button {
+    border: 0.5px solid #f8f8f8;
+
+    color: #e8e8e8;
+    font-size: 13px;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+}
+#footer-gmail {
+    color: #e8e8e8;
+    font-size: 12px;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
 
 }
@@ -296,7 +356,7 @@ main h1{
 }
 .card {
     width: 100%;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
 }
 .carousel-image {
     width: 100%;
@@ -324,12 +384,34 @@ main h1{
   z-index: 1000px;
 }
 
+/* footer footer footer */ /* footer footer footer */ 
+footer {
+    overflow: hidden;
+}
+#footer-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer-title-container h1 {
+    color: #e8e8e8;
+    font-size: 15px;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#footer-star{
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 }
 
 
 
 
-@media (min-width:551px) and (max-width:900px){
+@media (min-width:551px) and (max-width:1000px){
 
 body{
     display: grid;
@@ -443,9 +525,50 @@ main h1{
   z-index: 1000px;
 }
 
+/* footer footer footer */ /* footer footer footer */ 
+footer {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 20px 2fr 315px 1fr 20px;
+    grid-template-rows: 1fr;
+    height: auto;
+}
+#footer-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3/4;
+
+}
+#footer-title-container h1 {
+    color: #e8e8e8;
+    font-size: 14px;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#footer-star{
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer-line {
+    border-top: 1px solid #f8f8f8;
+    display: flex;
+    align-self: center;
+    grid-column: 2/3;
+}
+.footer-line-two {
+    border-top: 1px solid #f8f8f8;
+    display: flex;
+    align-self: center;
+    grid-column: 4/5;
 }
 
-@media (min-width:901px){
+
+}
+
+@media (min-width:1001px){
 
 body{
     display: grid;
@@ -626,6 +749,50 @@ main h1{
 #book-thumbnail {
   touch-action: manipulation;
   z-index: 1000px;
+}
+
+
+/* footer footer footer */ /* footer footer footer */ 
+footer {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns:20px 4fr 360px 3fr 20px;
+    grid-template-rows: 1fr;
+    height: auto;
+}
+#footer-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3/4;
+}
+#footer-title-container h1 {
+    color: #e8e8e8;
+    font-size: 15px;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: 1.5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#footer-star{
+    width: 20px;
+    height: 20px;
+}
+.footer-line {
+    border-top: 1px solid #f8f8f8;
+    display: flex;
+    align-self: center;
+    grid-column: 2/3;
+
+}
+.footer-line-two {
+    border-top: 1px solid #f8f8f8;
+    display: flex;
+    align-self: center;
+    grid-column: 4/5;
+
 }
 
 }
