@@ -85,9 +85,17 @@ header {
     width: 42px;
     object-fit: cover;
 }
-
 main {
-    height: 40em;
+    overflow: hidden;
+}
+#carousel-description-container {
+    display: none;
+}
+#description-title {
+    display: none;
+}
+#description-title-two {
+    display: none;
 }
 
 
@@ -146,9 +154,6 @@ main {
     grid-column: 1/5;
     margin-top: 20em;
     background-color: #080808;
-    overflow: hidden;
-}
-
 }
 
 /*showcase*//*showcase*/
@@ -174,6 +179,7 @@ main h1{
 }
 .card {
     width: 100%;
+    margin-bottom: 5em;
 }
 .carousel-image {
     width: 100%;
@@ -200,6 +206,11 @@ main h1{
   touch-action: manipulation;
   z-index: 1000px;
 }
+
+
+
+}
+
 
 
 @media (min-width:401px) and (max-width:550px){
@@ -259,8 +270,64 @@ main {
     margin-top: 25em;
     background-color: #080808;
     
+    
 }
+
+/*showcase*//*showcase*/
+
+#showcase-title {
+    margin-top: 1em;
+    margin-left: 3px;
 }
+main h1{
+    font-size: 50px;
+    font-family: articulat-heavy-cf, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-style: normal;
+    color: #f8f8f8;
+    white-space: nowrap;
+    line-height: 41px;
+}
+#carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+.card {
+    width: 100%;
+    margin-bottom: 5em;
+}
+.carousel-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#thumbnail-container {
+    display: flex;
+    margin-top: 5px;
+    gap: 5px;
+    margin-right: 5px;
+    justify-content: flex-end;
+}
+.carousel-thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 1px;
+}
+
+#vinyl-thumbnail,
+#home-thumbnail,
+#book-thumbnail {
+  touch-action: manipulation;
+  z-index: 1000px;
+}
+
+}
+
+
+
 
 @media (min-width:551px) and (max-width:900px){
 
@@ -324,6 +391,58 @@ main {
     background-color: #080808;
     
 }
+
+/*showcase*//*showcase*/
+
+#showcase-title {
+    margin-top: 1em;
+    margin-left: 3px;
+}
+main h1{
+    font-size: 50px;
+    font-family: articulat-heavy-cf, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-style: normal;
+    color: #f8f8f8;
+    white-space: nowrap;
+    line-height: 41px;
+}
+#carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+.card {
+    width: 100%;
+    margin-bottom: 5em;
+}
+.carousel-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+#thumbnail-container {
+    display: flex;
+    margin-top: 5px;
+    gap: 5px;
+    margin-right: 5px;
+    justify-content: flex-end;
+}
+.carousel-thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 1px;
+}
+
+#vinyl-thumbnail,
+#home-thumbnail,
+#book-thumbnail {
+  touch-action: manipulation;
+  z-index: 1000px;
+}
+
 }
 
 @media (min-width:901px){
@@ -389,6 +508,110 @@ main {
     grid-column: 1/9;
     margin-top: 23em;
     background-color: #080808;
+    display: grid;
+    grid-template-columns: 0.07fr 1fr 0.07fr 0.5fr 0.5fr 0.07fr;
     
 }
+
+/*showcase*//*showcase*/
+
+#showcase-title {
+    margin-top: 1em;
+    margin-bottom: 2px;
+    font-size: 80px;
+    line-height: 60px;
+    grid-column: 2/3;
+    display: flex;
+    justify-self: end;
+}
+
+#showcase-title-two {
+    margin-bottom: 2px;
+    font-size: 80px;
+    line-height: 60px;
+    grid-column: 2/3;
+    display: flex;
+    justify-self: end;
+    align-self: flex-end;
+}
+#description-title{
+    grid-column: 4/6;
+    grid-row: 1/2;
+    font-size: 80px;
+    line-height: 60px;
+    display: flex;
+    align-self: flex-end;
+}
+#description-title-two{
+    grid-column: 4/6;
+    margin-bottom: 2px;
+    font-size: 80px;
+    line-height: 60px;
+    display: flex;
+    align-self: flex-end;
+    -webkit-text-stroke: 1px #F3F3F3;
+    color: transparent
+}
+main h1{
+    font-size: 50px;
+    font-family: articulat-heavy-cf, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-style: normal;
+    color: #f8f8f8;
+    white-space: nowrap;
+}
+#carousel {
+    margin-top: 3px;
+    grid-column: 1/7;
+}
+.card {
+    display: grid;
+    grid-template-columns: 0.07fr 1fr 0.07fr 0.9fr 0.1fr 0.07fr;
+    margin-bottom: 10em;
+}
+#carousel-description-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    grid-column: 4/5;
+}
+#carousel-description-container h2{
+    color: #e9e9e9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: normal;
+
+}
+.carousel-image {
+    width: 90%;
+    object-fit: cover;
+    grid-column: 2/3;
+    display: flex;
+    justify-self: end;
+}
+#thumbnail-container {
+    display: flex;
+    margin-top: 5px;
+    gap: 5px;
+    justify-content: flex-end;
+    grid-column: 2/3;
+}
+.carousel-thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 1px;
+}
+#carousel-date {
+    line-height: 41px;
+}
+
+#vinyl-thumbnail,
+#home-thumbnail,
+#book-thumbnail {
+  touch-action: manipulation;
+  z-index: 1000px;
+}
+
 }
