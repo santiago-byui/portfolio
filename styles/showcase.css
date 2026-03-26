@@ -85,6 +85,7 @@ header {
     height: 42px;
     width: 42px;
     object-fit: cover;
+    cursor: pointer;
 }
 main {
     overflow: hidden;
@@ -102,6 +103,9 @@ footer {
     height: auto;
     background-color: #080808;
     grid-column: 1/9;
+}
+.carousel-thumbnail {
+    cursor: pointer;
 }
 
 
@@ -254,10 +258,16 @@ footer {
     align-items: center;
     justify-self: center;
 
+    cursor: pointer;
+
     margin-top: 50px;
 
     transition: 0.2s;
 }
+#footer-button:hover {
+    filter: drop-shadow(0 0 5px #ffffff8a);
+}
+
 #footer-button:active {
     background-color: #f8f8f8;
     color: #080808;
@@ -433,10 +443,16 @@ footer {
     align-items: center;
     justify-self: center;
 
+    cursor: pointer;
+
     margin-top: 50px;
 
     transition: 0.2s;
 }
+#footer-button:hover {
+    filter: drop-shadow(0 0 5px #ffffff8a);
+}
+
 #footer-button:active {
     background-color: #f8f8f8;
     color: #080808;
@@ -578,7 +594,7 @@ main h1{
 footer {
     overflow: hidden;
     display: grid;
-    grid-template-columns: 20px 2fr 315px 1fr 20px;
+    grid-template-columns: 20px 2fr 315px 2fr 20px;
     grid-template-rows: 1fr;
     height: auto;
     padding-top: 15em;
@@ -631,6 +647,7 @@ footer {
     justify-content: center;
     align-items: center;
     justify-self: center;
+    cursor: pointer;
 
     margin-top: 50px;
 
@@ -640,6 +657,10 @@ footer {
     grid-row: 2/3;
     
 }
+#footer-button:hover {
+    filter: drop-shadow(0 0 5px #ffffff8a);
+}
+
 #footer-button:active {
     background-color: #f8f8f8;
     color: #080808;
@@ -858,7 +879,7 @@ main h1{
 footer {
     overflow: hidden;
     display: grid;
-    grid-template-columns:20px 3.5fr 360px 3fr 20px;
+    grid-template-columns:20px 3fr 360px 3fr 20px;
     padding-top: 15em;
 }
 #footer-title-container {
@@ -920,12 +941,13 @@ footer {
 
     grid-column: 3/4;
     grid-row: 2/3;
+
+    cursor: pointer;
     
 }
 
 #footer-button:hover {
-    background-color: #f8f8f8;
-    color: #080808;
+    filter: drop-shadow(0 0 5px #ffffff8a);
 }
 
 #footer-button:active {
@@ -934,7 +956,7 @@ footer {
 }
 #footer-gmail {
     color: #e8e8e8;
-    font-size: 12px;
+    font-size: 14px;
     font-family: articulat-cf,sans-serif;
     font-weight: 500;
     letter-spacing: 1px;

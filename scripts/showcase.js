@@ -101,7 +101,8 @@ document.addEventListener("DOMContentLoaded",()=>{
         .to(messagePicture,{
             y: "0px",
             duration: 0.4,
-            ease: "bounce"
+            ease: "bounce",
+            onComplete: ()=> { messagePicture.style.cursor = "auto" }
         })
         .to("#message-1",{
             y:"-10px",
