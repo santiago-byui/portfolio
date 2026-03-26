@@ -106,7 +106,7 @@ footer button:active {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
 body {
     display: grid;
@@ -126,6 +126,51 @@ header h1 {
 main {
     grid-column: 2/3;
     margin-top: 40px;
+}
+main form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    margin-bottom: 10px;
+}
+#email{
+    margin-bottom: 26px;
+}
+footer {
+    grid-column: 2/3;
+    margin-top: 25px;
+}
+#navigation-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+}
+
+
+
+
+@media (min-width: 801px){
+
+body {
+    display: grid;
+    grid-template-columns: 5fr 465px 5fr;
+}
+header {
+    grid-column: 1/4;
+    margin-top: 18vh;
+    display: flex;
+    justify-content: center;
+}
+header h1 {
+    font-size: 45px;
+    text-align: center;
+}
+main {
+    grid-column: 2/3;
+    margin-top: 80px;
 }
 main form {
     display: flex;
