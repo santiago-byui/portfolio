@@ -236,6 +236,17 @@ document.addEventListener("DOMContentLoaded",()=>{
     const thumbnailThree = document.querySelector("#thumbnail-3")
     const carouselH2 = document.querySelector("#carousel-h2")
 
+
+    const imageList = [
+
+            {src: "images/georgia-lowres.jpg",lineOne: "TYPE",lineTwo: "POSTER",text:"This is a type poster I made for the popular typeface Georgia! I tried to highlight its elegance and playfulness by employing a dynamic but heavily aligned composition. ",href:"showcase-pages/type-poster.html"},
+            {src: "images/book-lowres.jpg",lineOne: "BOOK",lineTwo: "COVER",text:"A book cover design for Dante's Divine Comedy. I chose to draw attention to the INFERNO subtitle because of its popularity as well as it's boldness."},
+            {src: "images/home-lowres.jpg",lineOne: "HOME",lineTwo: "LAYOUT",text:"One of my favorite works on display. The goal of this exploration was to form the word HOME through framented type and negative space. Juggling readability and incresingly elaborate compositions was hard but incredibly fun."},
+            {src: "images/vinyl-lowres.jpg",lineOne: "VINYL",lineTwo: "COVER",text:"Cover design for the Body and Soul album by Coleman Hawkins. The composition is purely geometrical, and it relies solely on design principles like alignment and negative space to create visual interest. Limitations demand creative solutions."}
+
+        ]
+
+
     showcaseObserver.observe(carouselImage)
 
     function changeImage(thumbnail) {
@@ -247,15 +258,6 @@ document.addEventListener("DOMContentLoaded",()=>{
         
         const lastImage = carouselImage.src
         const newImage = thumbnail.src
-        
-        const imageList = [
-
-            {src: "images/georgia-lowres.jpg",lineOne: "TYPE",lineTwo: "POSTER",text:"This is a type poster I made for the popular typeface Georgia! I tried to highlight its elegance and playfulness by employing a dynamic but heavily aligned composition. "},
-            {src: "images/book-lowres.jpg",lineOne: "BOOK",lineTwo: "COVER",text:"A book cover design for Dante's Divine Comedy. I chose to draw attention to the INFERNO subtitle because of its popularity as well as it's boldness."},
-            {src: "images/home-lowres.jpg",lineOne: "HOME",lineTwo: "LAYOUT",text:"One of my favorite works on display. The goal of this exploration was to form the word HOME through framented type and negative space. Juggling readability and incresingly elaborate compositions was hard but incredibly fun."},
-            {src: "images/vinyl-lowres.jpg",lineOne: "VINYL",lineTwo: "COVER",text:"Cover design for the Body and Soul album by Coleman Hawkins. The composition is purely geometrical, and it relies solely on design principles like alignment and negative space to create visual interest. Limitations demand creative solutions."}
-
-        ]
 
         const imageInfo = imageList.find(img => newImage.endsWith(img.src))
         
@@ -398,6 +400,23 @@ document.addEventListener("DOMContentLoaded",()=>{
             duration:0.2
         })
     });
+
+    /* IMAGE CONTAINER BUTTON FUNCTIONALITY! */
+    containerShadeButton.addEventListener("click",()=>{
+
+        const currentImage = carouselImage.src
+        const imageInfo = imageList.find(img => currentImage.endsWith(img.src))
+        
+
+        if (imageInfo.href){
+            window.location.href = imageInfo.href;
+        } else {
+            console.log("no image info")
+        }
+
+    });
+
+
 
 
 });
