@@ -215,6 +215,42 @@ main h1{
   touch-action: manipulation;
   z-index: 1000px;
 }
+#carousel-image-container {
+    position: relative;
+    width: 100%;
+}
+#carousel-image-container-shade{
+    background-color: #0808088f;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    opacity: 0;
+    z-index: 1000;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+#carousel-image-container-button{
+    color: #cfcfcf;
+    font-family: articulat-cf,sans-serif;
+    letter-spacing: normal;
+    cursor: pointer;
+    border: 1px solid #cfcfcf;
+    border-right: 0px solid transparent;
+    border-left: 2px solid #cfcfcf;
+    padding: 14px;
+    padding-right: 3vw;
+    border-radius: 1px;
+    
+}
+#carousel-image-container-button:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-right: 0px solid transparent;
+    border-left: 2px solid #ffffff;
+}
 
 
 /* footer footer footer */ /* footer footer footer */ 
@@ -400,6 +436,43 @@ main h1{
 #book-thumbnail {
   touch-action: manipulation;
   z-index: 1000px;
+}
+
+#carousel-image-container {
+    position: relative;
+    width: 100%;
+}
+#carousel-image-container-shade{
+    background-color: #0808088f;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    opacity: 0;
+    z-index: 1000;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+#carousel-image-container-button{
+    color: #cfcfcf;
+    font-family: articulat-cf,sans-serif;
+    letter-spacing: normal;
+    cursor: pointer;
+    border: 1px solid #cfcfcf;
+    border-right: 0px solid transparent;
+    border-left: 2px solid #cfcfcf;
+    padding: 14px;
+    padding-right: 3vw;
+    border-radius: 1px;
+    
+}
+#carousel-image-container-button:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-right: 0px solid transparent;
+    border-left: 2px solid #ffffff;
 }
 
 /* footer footer footer */ /* footer footer footer */ 
@@ -591,6 +664,43 @@ main h1{
 #book-thumbnail {
   touch-action: manipulation;
   z-index: 1000px;
+}
+
+#carousel-image-container {
+    position: relative;
+    width: 100%;
+}
+#carousel-image-container-shade{
+    background-color: #0808088f;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    opacity: 0;
+    z-index: 1000;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+#carousel-image-container-button{
+    color: #cfcfcf;
+    font-family: articulat-cf,sans-serif;
+    letter-spacing: normal;
+    cursor: pointer;
+    border: 1px solid #cfcfcf;
+    border-right: 0px solid transparent;
+    border-left: 2px solid #cfcfcf;
+    padding: 14px;
+    padding-right: 3vw;
+    border-radius: 1px;
+    
+}
+#carousel-image-container-button:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-right: 0px solid transparent;
+    border-left: 2px solid #ffffff;
 }
 
 /* footer footer footer */ /* footer footer footer */ 
@@ -848,12 +958,48 @@ main h1{
     line-height: normal;
 
 }
-.carousel-image {
-    width: 90%;
-    object-fit: cover;
+#carousel-image-container {
     grid-column: 2/3;
+    position: relative;
     display: flex;
     justify-self: end;
+    width: 90%;
+}
+#carousel-image-container-shade{
+    background-color: #0808088f;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    opacity: 0;
+    z-index: 1000;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+#carousel-image-container-button{
+    color: #cfcfcf;
+    font-family: articulat-cf,sans-serif;
+    letter-spacing: normal;
+    cursor: pointer;
+    border: 1px solid #cfcfcf;
+    border-right: 0px solid transparent;
+    border-left: 2px solid #cfcfcf;
+    padding: 14px;
+    padding-right: 3vw;
+    border-radius: 1px;
+    
+}
+#carousel-image-container-button:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-right: 0px solid transparent;
+    border-left: 2px solid #ffffff;
+}
+.carousel-image {
+    width: 100%;
+    object-fit: cover;
 }
 #thumbnail-container {
     display: flex;

@@ -50,16 +50,22 @@ form label {
     color: #f8f8f8;
 }
 form input {
-    border: 1px solid #f8f8f8;
+    border: 1px solid #f8f8f86c;
     border-radius: 1px;
     color: #f8f8f8;
     font-family: Arial, Helvetica, sans-serif;
 }
-form textarea {
+form input:focus {
     border: 1px solid #f8f8f8;
+}
+form textarea {
+    border: 1px solid #f8f8f86c;
     border-radius: 1px;
     color: #f8f8f8;
     font-family: Arial, Helvetica, sans-serif;
+}
+form textarea:focus {
+    border: 1px solid #f8f8f8;
 }
 #email{
     padding: 14px;

@@ -243,6 +243,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         if(carouselCooldown === true){return};
         
         carouselCooldown = true;
+        containerShade.style.display = "none";
         
         const lastImage = carouselImage.src
         const newImage = thumbnail.src
@@ -278,6 +279,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                     ease: "power1.out",
                     onComplete: ()=>{
                         carouselCooldown = false;
+                        containerShade.style.display = "";
                     }
                 })
 
@@ -288,8 +290,6 @@ document.addEventListener("DOMContentLoaded",()=>{
                     opacity:1,
                     duration:0.5,
                     ease: "power1.out",
-                    onComplete: ()=>{
-                    }
                 })
 
 
@@ -374,6 +374,30 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     })
 
+
+    /*IMAGE CONTAINER SHADE*/ 
+    const containerShade = document.querySelector("#carousel-image-container-shade");
+    const containerShadeButton = document.querySelector("#carousel-image-container-button");
+
+    containerShade.addEventListener("mouseenter",()=>{
+        gsap.to(containerShade,{
+            opacity:1,
+            duration:0.2
+        })
+        gsap.from(containerShadeButton,{
+            opacity:0,
+            x:100,
+            duration:0.6,
+            ease: "power1.out"
+        })
+    });
+
+    containerShade.addEventListener("mouseleave",()=>{
+        gsap.to(containerShade,{
+            opacity:0,
+            duration:0.2
+        })
+    });
 
 
 });
