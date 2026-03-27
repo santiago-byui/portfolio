@@ -451,10 +451,13 @@ footer {
 }
 #footer-button:hover {
     filter: drop-shadow(0 0 5px #ffffff8a);
+    background-color: #f0f0f0;
+    color: #080808;
+
 }
 
 #footer-button:active {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     color: #080808;
 }
 #footer-gmail {
@@ -659,10 +662,13 @@ footer {
 }
 #footer-button:hover {
     filter: drop-shadow(0 0 5px #ffffff8a);
+    background-color: #f0f0f0;
+    color: #080808;
+
 }
 
 #footer-button:active {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     color: #080808;
 }
 #footer-gmail {
@@ -948,10 +954,13 @@ footer {
 
 #footer-button:hover {
     filter: drop-shadow(0 0 5px #ffffff8a);
+    background-color: #f0f0f0;
+    color: #080808;
+
 }
 
 #footer-button:active {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     color: #080808;
 }
 #footer-gmail {

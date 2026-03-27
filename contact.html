@@ -9,22 +9,44 @@
 
     <link rel="stylesheet" href="styles/contact.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/DrawSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/Draggable.min.js"></script>
+    <script src=https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/InertiaPlugin.min.js></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/MorphSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrambleTextPlugin.min.js"></script>
+
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "2ARNsZDGuty053jeR",
+            });
+        })();
+    </script>
+
 </head>
 
 <body>
     
     <header>
-        <h1>Have a project, question or idea?</h1>
+        <h1 id="hero-text">Have a project, question or idea?</h1>
     </header>
 
     <main>
-        <form action="">
+        <form id="contact-form">
 
             <label for="email">Your Email</label>
-            <input type="text" id="email" name="email" placeholder="example@email.com">
+            <input type="text" id="email" name="email" placeholder="example@email.com" required>
 
             <label for="message">Your Message</label>
-            <textarea name="message" id="message" placeholder="Write your message here... "></textarea>
+            <textarea name="message" id="message" placeholder="Write your message here... " required></textarea>
         
 
         </form>
@@ -36,11 +58,14 @@
         </button>
         <div id="navigation-container">
 
-            <a href="index.html">⬅ Home Page</a>
-            <a href="showcase.html">Showcase ➡</a>
+            <a href="index.html">⇐ Home Page</a>
+            <a href="showcase.html">Showcase ⇒</a>
 
         </div>
     </footer>
 
 </body>
+
+<script src="scripts/contact.js"></script>
+
 </html>
