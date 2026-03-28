@@ -48,6 +48,21 @@ body {
 body img {
     width: 100%;
 }
+#desktop-showcase{
+        display: block;
+}
+#mobile-showcase{
+        display: none;
+}
+
+@media (max-width:600px){
+    #desktop-showcase{
+        display: none;
+    }
+    #mobile-showcase{
+        display: block;
+    }
+}
 
     </style>
 </head>
@@ -60,6 +75,7 @@ body img {
 
 
 <body>
-    <img src="../images/static-showcase.png" alt="">
+    <img src="../images/georgia/georgia-desktop-showcase.png" alt="desktop-showcase" id="desktop-showcase">
+    <img src="../images/georgia/georgia-mobile-showcase.png" alt="mobile-showcase" id="mobile-showcase">
 </body>
 </html>
