@@ -409,7 +409,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         
 
         if (imageInfo.href){
-            window.location.href = imageInfo.href;
+            window.open(imageInfo.href,"_blank");
         } else {
             console.log("no image info")
         }
