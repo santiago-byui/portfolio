@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronto Design</title>
+
+    <link rel="icon" href="../svgs/favicon.ico?v=2">
+
+    <style>
+        /* Resetting default browser styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+    font-family: sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, textarea, select {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* */
+
+body {
+    background-color: black;
+}
+body img {
+    width: 100%;
+}
+#desktop-showcase{
+        display: block;
+}
+#mobile-showcase{
+        display: none;
+}
+
+@media (max-width:600px){
+    #desktop-showcase{
+        display: none;
+    }
+    #mobile-showcase{
+        display: block;
+    }
+}
+
+    </style>
+</head>
+
+
+
+
+
+
+
+
+<body>
+    <img src="../images/pronto/pronto-desktop-showcase.png" alt="desktop-showcase" id="desktop-showcase">
+    <img src="../images/pronto/pronto-desktop-showcase.png" alt="mobile-showcase" id="mobile-showcase">
+</body>
+</html>

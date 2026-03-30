@@ -235,6 +235,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const thumbnailTwo = document.querySelector("#thumbnail-2")
     const thumbnailThree = document.querySelector("#thumbnail-3")
     const thumbnailFour = document.querySelector("#thumbnail-4")
+    const thumbnailFive = document.querySelector("#thumbnail-5")
     const carouselH2 = document.querySelector("#carousel-h2")
 
 
@@ -244,7 +245,8 @@ document.addEventListener("DOMContentLoaded",()=>{
             {src: "images/book-lowres.jpg",lineOne: "BOOK",lineTwo: "COVER",text:"A book cover design for Dante's Divine Comedy. I chose to draw attention to the INFERNO subtitle because of its popularity as well as it's boldness." ,href:"showcase-pages/book-cover.html"},
             {src: "images/home-lowres.jpg",lineOne: "HOME",lineTwo: "LAYOUT",text:"One of my favorite works on display. The goal of this exploration was to form the word HOME through fragmented type and negative space. Juggling readability and increasingly elaborate compositions was hard but incredibly fun.",href:"showcase-pages/home-layout.html"},
             {src: "images/vinyl-lowres.jpg",lineOne: "VINYL",lineTwo: "COVER",text:"Cover design for the Body and Soul album by Coleman Hawkins. The composition is purely geometrical, and it relies solely on design principles like alignment and negative space to create visual interest. Limitations demand creative solutions.",href:"showcase-pages/vinyl-cover.html"},
-            {src: "images/website-lowres.jpg",lineOne: "SITE",lineTwo: "DESIGN",text:"Cover design for the Body and Soul album by Coleman Hawkins. The composition is purely geometrical, and it relies solely on design principles like alignment and negative space to create visual interest. Limitations demand creative solutions.",href:"showcase-pages/website-design.html"}
+            {src: "images/website-lowres.jpg",lineOne: "SITE",lineTwo: "DESIGN",text:"The old design for my personal portfolio website! While the website has had quite a few changes, it still keeps its original identity.",href:"showcase-pages/website-design.html"},
+            {src: "images/pronto-lowres.jpg",lineOne: "PRONTO",lineTwo: "DESIGN",text:"Pronto is a work app designed to make your day smoother by letting you clock-in instantly, I was tasked with breathing new life into its interface.",href:"showcase-pages/pronto-design.html"}
 
         ]
 
@@ -365,6 +367,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     })
     thumbnailFour.addEventListener("pointerup",()=>{
         changeImage(thumbnailFour);
+    })
+    thumbnailFive.addEventListener("pointerup",()=>{
+        changeImage(thumbnailFive);
     })
 
 
