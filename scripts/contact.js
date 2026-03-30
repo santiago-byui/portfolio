@@ -34,7 +34,19 @@ introTimeline.from(heroText,{
     const form = document.getElementById("contact-form");
     const submitButton = document.getElementById("submit-button");
 
+    const emailField = document.querySelector("form input");
+    const messageField = document.querySelector("form textarea");
+
+
     submitButton.addEventListener("click", () => {
+
+         if (emailField.value === ""){
+            return
+        }
+        if (messageField.value === ""){
+            return
+        }
+
         submitButton.disabled = true;
         submitButton.textContent = "...";
 

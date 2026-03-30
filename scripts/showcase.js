@@ -234,6 +234,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const thumbnailOne = document.querySelector("#thumbnail-1")
     const thumbnailTwo = document.querySelector("#thumbnail-2")
     const thumbnailThree = document.querySelector("#thumbnail-3")
+    const thumbnailFour = document.querySelector("#thumbnail-4")
     const carouselH2 = document.querySelector("#carousel-h2")
 
 
@@ -242,7 +243,8 @@ document.addEventListener("DOMContentLoaded",()=>{
             {src: "images/georgia-lowres.jpg",lineOne: "TYPE",lineTwo: "POSTER",text:"This is a type poster I made for the popular typeface Georgia! I tried to highlight its elegance and playfulness by employing a dynamic but heavily aligned composition. ",href:"showcase-pages/type-poster.html"},
             {src: "images/book-lowres.jpg",lineOne: "BOOK",lineTwo: "COVER",text:"A book cover design for Dante's Divine Comedy. I chose to draw attention to the INFERNO subtitle because of its popularity as well as it's boldness." ,href:"showcase-pages/book-cover.html"},
             {src: "images/home-lowres.jpg",lineOne: "HOME",lineTwo: "LAYOUT",text:"One of my favorite works on display. The goal of this exploration was to form the word HOME through fragmented type and negative space. Juggling readability and increasingly elaborate compositions was hard but incredibly fun.",href:"showcase-pages/home-layout.html"},
-            {src: "images/vinyl-lowres.jpg",lineOne: "VINYL",lineTwo: "COVER",text:"Cover design for the Body and Soul album by Coleman Hawkins. The composition is purely geometrical, and it relies solely on design principles like alignment and negative space to create visual interest. Limitations demand creative solutions.",href:"showcase-pages/vynil-cover.html"}
+            {src: "images/vinyl-lowres.jpg",lineOne: "VINYL",lineTwo: "COVER",text:"Cover design for the Body and Soul album by Coleman Hawkins. The composition is purely geometrical, and it relies solely on design principles like alignment and negative space to create visual interest. Limitations demand creative solutions.",href:"showcase-pages/vinyl-cover.html"},
+            {src: "images/website-lowres.jpg",lineOne: "SITE",lineTwo: "DESIGN",text:"Cover design for the Body and Soul album by Coleman Hawkins. The composition is purely geometrical, and it relies solely on design principles like alignment and negative space to create visual interest. Limitations demand creative solutions.",href:"showcase-pages/website-design.html"}
 
         ]
 
@@ -360,6 +362,9 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     thumbnailThree.addEventListener("pointerup",()=>{
         changeImage(thumbnailThree);
+    })
+    thumbnailFour.addEventListener("pointerup",()=>{
+        changeImage(thumbnailFour);
     })
 
 

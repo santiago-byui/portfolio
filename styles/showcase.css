@@ -208,7 +208,13 @@ main h1{
     object-fit: cover;
     border-radius: 1px;
 }
-
+#thumbnail-container-2 {
+    display: flex;
+    margin-top: 3px;
+    gap: 5px;
+    margin-right: 5px;
+    justify-content: flex-end;
+}
 #vinyl-thumbnail,
 #home-thumbnail,
 #book-thumbnail {
@@ -430,7 +436,13 @@ main h1{
     object-fit: cover;
     border-radius: 1px;
 }
-
+#thumbnail-container-2 {
+    display: flex;
+    margin-top: 3px;
+    gap: 5px;
+    margin-right: 5px;
+    justify-content: flex-end;
+}
 #vinyl-thumbnail,
 #home-thumbnail,
 #book-thumbnail {
@@ -658,7 +670,13 @@ main h1{
     object-fit: cover;
     border-radius: 1px;
 }
-
+#thumbnail-container-2 {
+    display: flex;
+    margin-top: 3px;
+    gap: 5px;
+    margin-right: 5px;
+    justify-content: flex-end;
+}
 #vinyl-thumbnail,
 #home-thumbnail,
 #book-thumbnail {
@@ -1014,6 +1032,13 @@ main h1{
     height: 80px;
     object-fit: cover;
     border-radius: 1px;
+}
+#thumbnail-container-2 {
+    display: flex;
+    margin-top: 3px;
+    gap: 5px;
+    justify-content: flex-end;
+    grid-column: 2/3;
 }
 #carousel-date {
     line-height: 41px;
