@@ -92,17 +92,19 @@ document.addEventListener("DOMContentLoaded",()=>{
             return
         }
 
+        jumpTriggered = true
+
         const messagePictureTimeline = gsap.timeline();
 
         messagePictureTimeline.to(messagePicture,{
             y:"-40px",
-            duration:0.8
+            duration:0.8,
+            onComplete: ()=> { messagePicture.style.cursor = "auto" }
         })
         .to(messagePicture,{
             y: "0px",
             duration: 0.4,
-            ease: "bounce",
-            onComplete: ()=> { messagePicture.style.cursor = "auto" }
+            ease: "bounce"
         })
         .to("#message-1",{
             y:"-10px",
@@ -138,10 +140,14 @@ document.addEventListener("DOMContentLoaded",()=>{
             rotate:"360deg",
             opacity: 0,
             duration: 2,
-            ease: "power1.out"
+            ease: "power1.out",
+            onComplete: ()=>{
+                jumpTriggered=false,
+                messagePicture.style.cursor = "pointer"
+            }
         },"<")
 
-        jumpTriggered = true
+        
 
     });
      /* Message Bubble Animation */  /* Message Bubble Animation */
@@ -246,7 +252,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             {src: "images/home-lowres.jpg",lineOne: "HOME",lineTwo: "LAYOUT",text:"One of my favorite works on display. The goal of this exploration was to form the word HOME through fragmented type and negative space. Juggling readability and increasingly elaborate compositions was hard but incredibly fun.",href:"showcase-pages/home-layout.html"},
             {src: "images/vinyl-lowres.jpg",lineOne: "VINYL",lineTwo: "COVER",text:"Cover design for the Body and Soul album by Coleman Hawkins. The composition is purely geometrical, and it relies solely on design principles like alignment and negative space to create visual interest. Limitations demand creative solutions.",href:"showcase-pages/vinyl-cover.html"},
             {src: "images/website-lowres.jpg",lineOne: "SITE",lineTwo: "DESIGN",text:"The old design for my personal portfolio website! While the website has had quite a few changes, it still keeps its original identity.",href:"showcase-pages/website-design.html"},
-            {src: "images/pronto-lowres.jpg",lineOne: "PRONTO",lineTwo: "DESIGN",text:"Pronto is a work app designed to make your day smoother by letting you clock-in instantly, I was tasked with breathing new life into its interface.",href:"showcase-pages/pronto-design.html"}
+            {src: "images/pronto-lowres.jpg",lineOne: "PRONTO",lineTwo: "DESIGN",text:"Pronto is a work app designed to make your day smoother by letting you clock-in instantly. I was honored with the task of breathing new life into its interface.",href:"showcase-pages/pronto-design.html"}
 
         ]
 
