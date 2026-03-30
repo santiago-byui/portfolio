@@ -56,6 +56,10 @@ header {
     transform: scale(1,1.5);
     margin-right: -12px;
     z-index: -1;
+    opacity: 1;
+}
+.message-tail path {
+    fill: #4952ed;
 }
 .message-bubble{
     background-color: #4952ed;
@@ -106,6 +110,17 @@ footer {
 }
 .carousel-thumbnail {
     cursor: pointer;
+}
+#social-media{
+    display: flex;
+    gap: 10px;
+}
+#social-media img{
+    filter: brightness(0) invert(0.9);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: none;
 }
 
 

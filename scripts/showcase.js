@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     let jumpTriggered = false;
 
      /* Message Bubble Animation */  /* Message Bubble Animation */
+
+     
     messageTwo.addEventListener("mouseenter",()=>{
         gsap.to("#message-2 .message-bubble",{
             backgroundColor: "#525bf7",
